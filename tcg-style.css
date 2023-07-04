@@ -1,8 +1,8 @@
-input {
+input[type=text] {
     
     padding: 5px;
-    border: 2px black;
-    margin: 100px;
+    border: 2px solid black;
+    margin: 100px 0;
 
 }
 
