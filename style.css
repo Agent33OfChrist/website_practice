@@ -1,0 +1,75 @@
+body {
+  background-color: #353535;
+
+}
+
+.dropdownmenu ul, .dropdownmenu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownmenu ul {
+  background: black;
+  list-style: none;
+  width: 100%;
+}
+
+.dropdownmenu li{
+  float: left;
+  position: relative;
+  width: auto;
+}
+
+.dropdownmenu a{
+  background: #b36b00;
+  color: white;
+  display: block;
+  font-weight: 100;
+  font-size: 15px;
+  font-family: cursive;
+  padding: 15px 150px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.35s ease;
+
+}
+
+.dropdownmenu li:hover a{
+  background: #ce7d03;
+}
+
+#tcg-drpdwn{
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+
+
+}
+
+li:hover ul#tcg-drpdwn{
+  opacity: 1;
+  top: 55px;
+  visibility: visible;
+
+}
+
+#tcg-drpdwn li{
+  float: none;
+  width: 100%;
+}
+
+#tcg-drpdwn a:hover{
+  background: #b36b00;
+}
+
+#tcg-drpdwn a{
+  background-color: #ce7d03;
+}
+
+#logo {
+  height: 51px;
+  align-self: center;
+}

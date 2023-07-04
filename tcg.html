@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TCB Games</title>
+  </head>
+  <body>
+    <b>This is TCG!</b>
+    <h1>THIS WORKS</h1>
+    <form onsubmit="storedata(event)">
+      <div id="input_fav_tcg">
+        <label>Favorite TCG: <label>
+        <input type="text" id="fav_tcg" placeholder="MTG" required />
+      </div>
+
+      <div>
+          <label>Games Played</label>
+          <input type="number" id="games_played" min="0" />
+          <input type="submit" value="Press Me!"/>
+
+    </form>
+
+    <script type="text/javascript">
+      function storedata(event) {
+        event.preventDefault();
+
+        var fav_tcg = document.getElementById("fav_tcg").value;
+        var games_played = document.getElementById("games_played").value;
+
+        localStorage.setItem('fav_tcg', fav_tcg);
+        localStorage.setItem('games_played', games_played);
+
+
+      }
+    </script>
+
+  </body>
+</html>
