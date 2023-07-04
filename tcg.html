@@ -22,7 +22,7 @@
           <input type="number" id="games_played" min="0" required/>
       </div>
       <div class="submit" id="submit">
-          <input type="submit" value="Press Me!" ondclick="shout(event, 'dblclick')"/>
+          <input type="submit" value="Press Me!" />
       </div>
 
     </form>
@@ -38,11 +38,9 @@
         localStorage.setItem('name', name);
         SharedArrayBuffer.setItem('fav_tcg', fav_tcg);
         localStorage.setItem('games_played', games_played);
+        alert('submitted');
       }
-      function shout(event, msg){
-        event.preventDefault();
-        alert(msg);
-      }
+      
     </script>
 
   </body>
