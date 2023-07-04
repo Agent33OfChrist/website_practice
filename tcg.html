@@ -36,9 +36,9 @@
         var games_played = document.getElementById("games_played").value;
 
         localStorage.setItem('name', name);
-        SharedArrayBuffer.setItem('fav_tcg', fav_tcg);
+        localStorage.setItem('fav_tcg', fav_tcg);
         localStorage.setItem('games_played', games_played);
-        alert('submitted');
+        
       }
       
     </script>
