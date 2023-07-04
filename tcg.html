@@ -9,15 +9,18 @@
     <b>This is TCG!</b>
     <h1>THIS WORKS</h1>
     <form class="user_input" onsubmit="storedata(event)">
-      <div class="tcg_input" id="input_name"></div>
+      <div class="tcg_input" id="input_name">
+        <label>Full Name: </label>
+        <input type="name" id="name" placeholder="John Doe" />
+      </div>
       <div class="tcg_input" id="input_fav_tcg">
         <label>Favorite TCG: <label>
         <input type="text" id="fav_tcg" placeholder="MTG" required />
       </div>
 
       <div class="tcg_input" id="input_games_played">
-          <label>Games Played</label>
-          <input type="number" id="games_played" min="0" />
+          <label>Games Played: </label>
+          <input type="number" id="games_played" min="0" required/>
       </div>
       <div class="submit" id="submit">
           <input type="submit" value="Press Me!"/>
@@ -29,10 +32,11 @@
       function storedata(event) {
         event.preventDefault();
 
-        
+        var name = document.getElementById("name").value;
         var fav_tcg = document.getElementById("fav_tcg").value;
         var games_played = document.getElementById("games_played").value;
 
+        localStorage.setItem('name', name);
         SharedArrayBuffer.setItem('fav_tcg', fav_tcg);
         localStorage.setItem('games_played', games_played);
         
