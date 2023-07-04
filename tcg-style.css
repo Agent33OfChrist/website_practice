@@ -1,0 +1,11 @@
+form input{
+    background-color: orangered;
+    padding: 5px;
+    border: 2px green;
+    margin: 10px;
+
+}
+
+form {
+    align-self: center;
+}
