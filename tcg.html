@@ -7,10 +7,10 @@
   </head>
   <body>
     <h1>Please fill out this form!</h1>
-    <form class="user_input" onsubmit="storedata(event)">
+    <form class="user_input" onsubmit="storedata(event)" >
       <div class="tcg_input" id="input_name">
         <label>Full Name: </label>
-        <input type="text" id="name" placeholder="John Doe" />
+        <input type="text" id="name" placeholder="John Does not matter" required/>
       </div>
       <div class="tcg_input" id="input_fav_tcg">
         <label>Favorite TCG: <label>
@@ -38,7 +38,7 @@
         localStorage.setItem('name', name);
         SharedArrayBuffer.setItem('fav_tcg', fav_tcg);
         localStorage.setItem('games_played', games_played);
-        
+        alert("AHHHH", event);
 
 
       }
