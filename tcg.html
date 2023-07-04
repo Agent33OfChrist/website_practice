@@ -22,7 +22,7 @@
           <input type="number" id="games_played" min="0" required/>
       </div>
       <div class="submit" id="submit">
-          <input type="submit" value="Press Me!"/>
+          <input type="submit" value="Press Me!" ondblclick="alert('dblclick')"/>
       </div>
 
     </form>
@@ -38,9 +38,8 @@
         localStorage.setItem('name', name);
         SharedArrayBuffer.setItem('fav_tcg', fav_tcg);
         localStorage.setItem('games_played', games_played);
-        alert("AHHHH");
-
-
+      function shout(msg)
+        alert(msg);
       }
     </script>
 
